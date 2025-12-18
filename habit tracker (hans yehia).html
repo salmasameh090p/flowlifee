@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="habit tracker (hana yehia).css">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="back">←</div>
+      <div class="title">PLANNER</div>
+    </div>
+
+    <!-- Task Input -->
+    <div class="bubble">
+      <input id="taskInput" type="text" placeholder="Enter task name">
+    </div>
+
+    <!-- Date Input -->
+    <div class="label">Due Date (optional)</div>
+    <div class="bubble">
+      <input id="dateInput" type="date">
+    </div>
+
+    <!-- Save Button -->
+    <div class="btn" id="saveBtn">Save Task</div>
+
+    <!-- Tasks -->
+    <div class="section-title">Tasks (Sorted by due date)</div>
+    <div id="taskList"></div>
+
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

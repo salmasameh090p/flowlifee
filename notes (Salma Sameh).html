@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="notes (Salma Sameh).css">
+<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <div class="header">
+      <a href="tasks.html" class="back">←</a>
+      <div class="title">NOTES</div>
+    </div>
+
+    <!-- Note Input -->
+    <div class="bubble">
+      <input id="noteTitle" type="text" placeholder="Note title">
+    </div>
+
+    <div class="bubble">
+      <textarea id="noteContent" rows="6" placeholder="Write your note here..."></textarea>
+    </div>
+
+    <div class="btn" id="saveNoteBtn">Save Note</div>
+
+    <div id="notesList"></div>
+
+    <!-- Bottom Navigation -->
+    <nav class="nav">
+      <a href="tasks.html">Tasks</a>
+      <a href="notes.html" class="active">Notes</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>

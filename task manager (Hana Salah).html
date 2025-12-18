@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Task List</h1>
+
+    <!-- Add Task -->
+    <div class="add-task">
+      <input type="text" id="taskName" placeholder="Enter task name">
+      <input type="date" id="dueDate">
+
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="School">School</option>
+        <option value="Personal">Personal</option>
+      </select>
+
+      <button onclick="addTask()">Save Task</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button onclick="filterTasks('All')">All</button>
+      <button onclick="filterTasks('Work')">Work</button>
+      <button onclick="filterTasks('School')">School</button>
+      <button onclick="filterTasks('Personal')">Personal</button>
+    </div>
+
+    <!-- Task List -->
+    <div id="taskList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
