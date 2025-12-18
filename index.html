@@ -1,105 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LifeFlow – Dashboard</title>
-
+  <meta charset="UTF-8">
+  <title>LifeFlow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#e8f7f8, #cfe6ea);
+      display: flex;
+      justify-content: center;
+    }
+
+    .app {
+      width: 390px;
+      min-height: 100vh;
+      padding: 20px;
       text-align: center;
     }
 
-    header {
-      background: #4a6cf7;
-      color: white;
-      padding: 30px 20px;
-    }
-
     h1 {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     p {
-      margin-top: 0;
-      opacity: 0.9;
+      color: #444;
+      margin-bottom: 30px;
     }
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+    .feature {
+      background: #4fc3c1;
+      padding: 16px;
+      margin-bottom: 15px;
+      border-radius: 18px;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card a {
+    .feature a {
+      color: white;
       text-decoration: none;
-      color: #4a6cf7;
       font-size: 18px;
       font-weight: bold;
+      display: block;
     }
 
-    footer {
-      margin-top: 30px;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
+    .feature:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
-
 <body>
 
-  <header>
+  <div class="app">
     <h1>LifeFlow</h1>
-    <p>Your all-in-one productivity web app</p>
-  </header>
+    <p>Your all-in-one productivity and wellbeing app</p>
 
-  <main class="container">
-
-    <div class="card">
-      <a href="notes (Salma Sameh).html">📝 Notes</a>
+    <div class="feature">
+      <a href="tasks.html">Task Manager</a>
     </div>
 
-    <div class="card">
-      <a href="habit tracker (hans yehia).html">📅 Habit Tracker</a>
+    <div class="feature">
+      <a href="notes.html">Notes</a>
     </div>
 
-    <div class="card">
-      <a href="weather (Judy mohamed).html">🌦 Weather</a>
+    <div class="feature">
+      <a href="habits.html">Habit Tracker</a>
     </div>
 
-    <div class="card">
-      <a href="Motivational Quotes Page (API Habiba Morgan).html">💬 Motivation</a>
+    <div class="feature">
+      <a href="weather.html">Weather</a>
     </div>
 
-    <div class="card">
-      <a href="Profile Settings Page(Judy ahmed.html">⚙️ Profile Settings</a>
+    <div class="feature">
+      <a href="quotes.html">Motivational Quotes</a>
     </div>
 
-  </main>
-
-  <footer>
-    © 2025 LifeFlow – PD3 Project
-  </footer>
+    <div class="feature">
+      <a href="settings.html">Profile Settings</a>
+    </div>
+  </div>
 
 </body>
 </html>
